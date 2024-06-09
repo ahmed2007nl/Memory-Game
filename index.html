@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../memory game/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory game</title>
+</head>
+<body>
+
+
+    <div class="start ">
+                <div class="start-container">
+                <h3>Memory Game</h3>
+                <div class="difficulty">
+                    <label for="timerDropdown">select difficulty</label>
+                    <select id="timerDropdown">
+                        <option value="30">30 seconds "hard"</option>
+                        <option value="60">1 minute "medium"</option>
+                        <option value="120">2 minutes "easy"</option>
+                    
+                    </select>
+                </div>
+                <span>start!</span>
+                </div>
+    </div>
+
+
+    <div class="main_container">
+
+
+        <div class="info_container justify-cont">
+            <div class="name">player: <span></span></div>
+            <div class="tries"> 
+                Number of tries is : <span></span>
+            </div>
+            <div class="timer">
+                timer:<span>00:00</span>
+            </div>
+        </div>
+
+
+        
+        <div class="theGame">
+            <div class="theBlock center " data-descr="coffee">
+                <div class="face front"></div>
+                <div class="face back " >
+                    <img src="../memory game/images/undraw_drink_coffee_v3au.svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="coffee">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_drink_coffee_v3au.svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="male">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_male_avatar_g98d.svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="male">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_male_avatar_g98d.svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="rain">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_walking_in_rain_vo9p.svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="rain">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_walking_in_rain_vo9p.svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="businessman">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_businessman_e7v0 (1).svg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="businessman">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/undraw_businessman_e7v0 (1).svg" alt="">
+                </div>
+            </div>
+
+            <div class="theBlock center" data-descr="kalot">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/shit.jpg" alt="">
+                </div>
+            </div>
+            <div class="theBlock center" data-descr="kalot">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/shit.jpg" alt="">
+                </div>
+            </div>
+          
+            <div class="theBlock center" data-descr="silly">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/sillly.jpg" alt="">
+                </div>
+            </div>
+          
+            <div class="theBlock center" data-descr="silly">
+                <div class="face front"></div>
+                <div class="face back" >
+                    <img src="../memory game/images/sillly.jpg" alt="">
+                </div>
+            </div>
+          
+        </div>
+            <!-- restart again -->
+            <div class="GameLosing">
+                <div class="modal-content ">
+                    <p><span>Game over.</span> <br>Do you want to restart?</p>
+                    <button id="yes">Yes</button>
+                    <button id="no">No</button>
+                </div>
+            </div>
+    </div>
+
+
+
+<!-- start Game audio -->
+<audio src="audio/game-start-6104.mp3" id="gameStart"></audio>
+
+<!-- win audio && congrats  -->
+
+<audio src="audio/congratulations-deep-voice-172193.mp3" id= "congrats" preload="auto"></audio>
+<audio src="audio/win.mp3" id="win" preload="auto"></audio>
+
+<!-- game over ! audio -->
+<audio src="audio/game-over-arcade-6435.mp3" id="game-over" preload="metadata"></audio>
+<!-- succes audio -->
+<audio src="audio/succes.mp3" id="succes" preload="metadata"></audio>
+
+<!-- fail audio -->
+<audio src="audio/wrong.mp3" id="wrong" preload="auto"></audio>
+    
+</body>
+<script src="../memory game/js.js"></script>
+
+</html>
